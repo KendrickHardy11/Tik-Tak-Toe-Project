@@ -1,0 +1,74 @@
+body{
+    background-color: bisque;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+h1{
+    font-size: 75px;
+    color: rgb(48, 45, 45);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#display{
+    background-color: lightcoral;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 30px;
+}
+.squares{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border: 5px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: grid;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.5s ease;
+}
+#reset{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    color: black;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+#reset:hover{
+    border: 3px solid rgb(241, 68, 68);
+    background-color: rgb(241, 68, 68);
+    font-size: 80px;
+}
+.squares:hover{
+    background-color: rgb(175, 255, 129);
+}
